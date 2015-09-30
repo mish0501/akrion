@@ -1,0 +1,43 @@
+#footer{
+	background-color: #d0d0d0;
+	margin-top: 50px;
+	color: #1c1c1c;
+
+	#columns{
+		width: 90%;
+		margin: 0 auto;
+		padding-bottom: 10px;
+		border-bottom: 1px solid #b3b3b3;
+
+		.col{
+			width: 35%;
+			float: left;
+			margin-right: 5%;
+
+			&:last-child{
+				margin-right: 0;
+			}
+
+			h2{
+				padding: 5px;
+				text-transform: uppercase;
+			}
+
+			p{
+				color:#606060;
+				padding: 5px;
+				text-align: justify;
+			}
+		}
+
+		#archive{
+			width: 15%;
+		}
+	}
+
+	h5{
+		width: 90%;
+		margin: 10px auto 0 auto;
+		font-weight: 400;
+	}
+}

@@ -1,0 +1,86 @@
+#lates-news{
+	h3{
+		text-align: center;
+		padding: 10px;
+		color: #303030;
+		font-weight: 300;
+		font-size: 25pt;
+   		text-transform: uppercase;
+	}
+
+	hr{
+		height: 1px;
+		background-color: #676767;
+		width: 10%;
+		margin: 20px auto;
+	}
+
+	.article{
+
+		margin-bottom: 20px;
+
+		.article-image{
+			img{
+				width: 100%;
+				height: 450px;
+			}
+		}
+
+		.article-content{
+			background-color: #dfdfdf;
+			margin-top: -100px;
+			position: relative;
+			color: #606060;
+			font-size: 16pt;
+			text-align: center;
+
+			.top{
+				font-size: 18pt;
+				color: #606060;
+				padding: 20px;
+				#color{
+					color:#8e8e8e;
+				}
+			}
+
+			.article-name{
+				color: #303030;
+				font-size: 32pt;
+				padding: 10px;
+			}
+
+			.more{
+				color: #222222;
+				padding: 10px 20px;
+				height: 44px;
+				line-height: 44px;
+				display: inline-block;
+            	white-space:nowrap;
+            	border: 1px solid #222;
+				@include border-radius(10px);
+				font-size: 18pt;
+				margin: 30px 0;
+
+				&:hover{
+					background-color: #222;
+					color: #fff;
+				}
+			}
+		}
+	}
+}
+
+#load{
+	margin: 0 auto;
+	@include border-radius(10px);
+	display: block;
+	border: 1px solid #222;
+	background-color: #222;
+	color: #fff;
+	padding: 10px 20px;
+	height: 44px;
+	line-height: 44px;
+	font-size: 18pt;
+	text-align: center;
+	width: 300px;
+}
