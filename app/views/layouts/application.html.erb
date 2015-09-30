@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Project</title>
+  <%= stylesheet_link_tag	'application', media: 'all', 'data-turbodivnks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbodivnks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	
+	<%= render "layouts/header" %>
+	<%= render "layouts/submenu" %>
+	<%= render "layouts/slider" %>
+	
+	<div id="lates-news" class="center">
+		<h3>Последни новини</h3>
+		<hr>
+
+		<div class="article">
+			<div class="article-image">
+				<%= image_tag "bg2.jpg" %>
+			</div>
+			<div class="article-content center">
+				<div class="top">
+					Име на модератор<span id="color">- Категория - 26.09.2015г.</span>
+				</div>
+				<div class="article-name">
+					ИМЕТО НА НОВИНАТА
+				</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur egestas posuere libero at ullamcorper. Etiam nec odio non ante finibus ultrices vel ultrices mi. Maecenas a est sed dolor pharetra mattis at mattis tu..
+rpis. Aliquam non libero nec tortor faucibus convallis. In rhoncus mollis velit in tempor...</p>
+				<%= link_to "Прочети повече", root_path, :class => "more" %>
+			</div>
+		</div>
+
+	</div>
+	
+	<div id="load">
+		Зареди повече новини.
+	</div>
+
+</body>
+</html>

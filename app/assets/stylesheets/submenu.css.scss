@@ -1,0 +1,48 @@
+/*SUBMENU*/
+
+#submenu{
+	background: rgba(0,0,0,.4);
+	height: 55px;
+	position: relative;
+	font-size: 10pt;
+	text-align: center;
+	z-index: 2;
+
+	ul{
+		width: auto;
+		white-space: nowrap;
+		list-style-type: none;
+		height: 55px;
+		display: inline-block;
+		margin: 0 auto;
+
+		li{
+			float: left;
+			margin-right: 15px;
+
+			&.selected a{
+				border: 1px solid #e2e2e2;
+
+				&:hover {
+					border-color: #fff;
+					color: #fff;
+				}
+			}
+
+			a{
+				color: #e2e2e2;
+				display: block;
+				padding: 0 15px;
+				height: 35px;
+				margin-top: 10px;
+				line-height: 35px;
+				text-align: center;
+				@include border-radius(5px);
+
+				&:hover {
+					color: #fff;
+				}
+			}
+		}
+	}
+}
