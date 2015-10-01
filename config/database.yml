@@ -21,7 +21,12 @@ development:
 test:
   <<: *default
   database: db/test.sqlite3
-
+  
 production:
-  <<: *default
-  database: db/production.sqlite3
+  adapter: postgresql
+  encoding: utf8
+  database: d8pj5dl01jbdhi
+  pool: 5
+  username: einhpoeevhrosi    #-> *** data from heroku's postgres user details page
+  password: YLd2s9oXpRoQKkh16g70gAaWYF
+  host: ec2-54-217-202-109.eu-west-1.compute.amazonaws.com
