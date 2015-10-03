@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
 
   root 'welcome#index'
+
+  get 'article/:id' => 'welcome#article', as:'article'
+
+  get 'game/:game_name' => 'welcome#game', as: 'game'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
