@@ -3,10 +3,6 @@ class WelcomeController < ApplicationController
 
 	end
 
-	def article
-		
-	end
-
 	def game
 
 	end

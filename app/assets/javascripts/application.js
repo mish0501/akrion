@@ -38,4 +38,8 @@ $( document ).ready(function() {
 		$("#lates-news").css("margin-top", sliderheight- 35);
 	}
 
+
+	var articleheight = $(".article").outerHeight();
+	$("#comments").css("margin-top", articleheight);
+
 });
