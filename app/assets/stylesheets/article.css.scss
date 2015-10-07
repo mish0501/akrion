@@ -17,6 +17,7 @@
 
 	.article{
 		margin-top: 0;
+		position: relative;
 	}
 }
 
@@ -38,7 +39,8 @@
 .article{
 
 	margin-bottom: 20px;
-	margin-top: -110px;
+	margin-top: -55px;
+	position: absolute;
 
 	.article-image{
 		img{
@@ -88,4 +90,9 @@
 			}
 		}
 	}
+}
+
+#comments{
+	position: relative;
+	margin-top: 578px;
 }

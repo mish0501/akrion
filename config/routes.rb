@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   root 'welcome#index'
 
-  get 'article/:id' => 'welcome#article', as:'article'
+  get 'article/:id' => 'article#show', as:'article'
 
   get 'game/:game_name' => 'welcome#game', as: 'game'
 

@@ -1,0 +1,31 @@
+<div class="article">
+	<div class="article-image">
+		<%= image_tag "bg2.jpg" %>
+	</div>
+	<div class="article-content center">
+		<div class="top">
+			<%= @article.name %><span id="color">- <%= @article.category %> - <%= @article.created_at %></span>
+		</div>
+		<div class="article-name">
+			<%= @article.articlename %>
+		</div>
+		<p><%= @article.articlecontent %></p>
+	</div>
+</div>
+
+<div id="comments">
+	<div id="disqus_thread" class="center"></div>
+	<script type="text/javascript">
+	 
+	    var disqus_shortname = '<%= Article::DISQUS_SHORTNAME %>';
+	    var disqus_identifier = '<%= @article.id %>';
+	    var disqus_url = '<%= request.original_url %>';
+	 
+	    /* * * DON'T EDIT BELOW THIS LINE * * */
+	    (function() {
+	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+	</script>
+</div>

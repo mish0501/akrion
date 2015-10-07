@@ -24,5 +24,18 @@ $( document ).ready(function() {
     goToFirstSpeed : 2000,
     singleItem : true
   });
- 
+
+	if ($('#submenu').is(':visible')) {
+		$("#slider").css({
+			"margin-top": "-110px",
+			"position": "relative"
+		})
+	}else{
+		$("#slider").css("margin-top", "-55px")
+
+		var sliderheight = $(".owl-wrapper-outer").outerHeight(); 
+
+		$("#lates-news").css("margin-top", sliderheight- 35);
+	}
+
 });
