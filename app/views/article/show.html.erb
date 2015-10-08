@@ -4,7 +4,7 @@
 	</div>
 	<div class="article-content center">
 		<div class="top">
-			<%= @article.name %><span id="color">- <%= @article.category %> - <%= @article.created_at %></span>
+			<%= @article.name %><span id="color">- <%= Games.find(@article.game_id).name %> - <%= @article.created_at.strftime("%d.%m.%Y") %></span>
 		</div>
 		<div class="article-name">
 			<%= @article.articlename %>

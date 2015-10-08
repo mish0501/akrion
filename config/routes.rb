@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   get 'article/:id' => 'article#show', as:'article'
 
-  get 'game/:game_name' => 'welcome#game', as: 'game'
+  get 'game/:game_id' => 'games#show', as: 'game'
 
   get 'signup'  => 'users#new' 
   resources :users

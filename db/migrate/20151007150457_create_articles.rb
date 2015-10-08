@@ -2,7 +2,7 @@ class CreateArticles < ActiveRecord::Migration
   def change
     create_table :articles do |t|
       t.string :name
-      t.string :category
+      t.string :game_id
       t.string :articlename
       t.text :articlecontent
 
