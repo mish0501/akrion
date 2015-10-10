@@ -16,14 +16,14 @@
 //= require_tree .
 
 $( document ).ready(function() {
- 
-  $("#slider").owlCarousel({
-    autoPlay : 3000,
-    stopOnHover : true,
-    paginationSpeed : 1000,
-    goToFirstSpeed : 2000,
-    singleItem : true
-  });
+
+	$("#slider").owlCarousel({
+		autoPlay : 3000,
+		stopOnHover : true,
+		paginationSpeed : 1000,
+		goToFirstSpeed : 2000,
+		singleItem : true
+	});
 
 	if ($('#submenu').is(':visible')) {
 		$("#slider").css({
