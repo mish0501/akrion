@@ -1,7 +1,6 @@
 <div id="signup" class="center">
 	<%= form_for(@user) do |f| %>
 		<%= f.text_field :name, :placeholder => "Nickaname" %>
-		<%= f.text_field :type, :placeholder => "Type" %>
 		<%= f.email_field :email, :placeholder => "Email" %>
 		<%= f.password_field :password, :placeholder => "Password" %>
 		<%= f.submit "Create an account", class: "btn-submit" %>
