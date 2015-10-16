@@ -33,9 +33,17 @@ $( document ).ready(function() {
 	}else{
 		$("#slider").css("margin-top", "-55px")
 
-		var sliderheight = $(".owl-wrapper-outer").outerHeight(); 
+		var sliderheight = $(".owl-item").outerHeight(true); 
+		console.log(sliderheight)
 
-		$("#lates-news").css("margin-top", sliderheight- 35);
+		$("#lates-news").css("margin-top", sliderheight - 35);
+		
+		window.onresize = function(event) {
+			var sliderheight = $(".owl-item").outerHeight(true); 
+			console.log(sliderheight)
+
+			$("#lates-news").css("margin-top", sliderheight - 35);
+		};
 	}
 
 
