@@ -31,11 +31,7 @@ $( document ).ready(function() {
 			"position": "relative"
 		})
 	}else{
-		$("#slider").css("margin-top", "-55px")
-
-		var sliderheight = $(".owl-wrapper-outer").outerHeight(); 
-
-		$("#lates-news").css("margin-top", sliderheight- 35);
+		$("#slider").css("margin-top", "-55px");
 	}
 
 
