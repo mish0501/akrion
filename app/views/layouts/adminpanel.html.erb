@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Project</title>
+  <%= stylesheet_link_tag	'adminpanel', media: 'all', 'data-turbodivnks-track' => true %>
+  <%= javascript_include_tag 'adminpanel', 'data-turbodivnks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body class="contrast-red login contrast-background">
+	
+	<%= yield %>
+	
+</body>
+</html>

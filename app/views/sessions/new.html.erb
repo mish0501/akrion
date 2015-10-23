@@ -1,7 +1,67 @@
-<div id="login" class="center">
-	<%= form_for(:session, url: login_path) do |f| %> 
-		<%= f.email_field :email, :placeholder => "Email" %> 
-		<%= f.password_field :password, :placeholder => "Password" %> 
-		<%= f.submit "Log in", class: "btn-submit" %>
-	<% end %>
+<div class='middle-container'>
+  <div class='middle-row'>
+    <div class='middle-wrapper'>
+      <div class='login-container-header'>
+        <div class='container'>
+          <div class='row'>
+            <div class='col-sm-12'>
+              <div class='text-center'>
+                <img width="121" height="31" src="assets/images/flatty/logo_lg.svg" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='login-container'>
+        <div class='container'>
+          <div class='row'>
+            <div class='col-sm-4 col-sm-offset-4'>
+              <h1 class='text-center title'>Sign in</h1>
+				<%= form_for(:session, url: login_path) do |f| %> 
+                <div class='form-group'>
+                  <div class='controls with-icon-over-input'>
+                    
+					<%= f.email_field :email, :placeholder => "E-mail", :class => 'form-control' %>
+					<i class='icon-user text-muted'></i>
+                  </div>
+                </div>
+                <div class='form-group'>
+                  <div class='controls with-icon-over-input'>
+					<%= f.password_field :password, :placeholder => "Password", :class => 'form-control' %>
+                    <i class='icon-lock text-muted'></i>
+                  </div>
+                </div>
+                <div class='checkbox'>
+                  <label for='remember_me'>
+                    <input id='remember_me' name='remember_me' type='checkbox' value='1'>
+                    Remember me
+                  </label>
+                </div>
+				<%= f.submit "Log in", class: "btn btn-block" %>
+				<% end %>
+              <div class='text-center'>
+                <hr class='hr-normal'>
+                <a href='forgot_password.html'>Forgot your password?</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='login-container-footer'>
+        <div class='container'>
+          <div class='row'>
+            <div class='col-sm-12'>
+              <div class='text-center'>
+              	<%= link_to signup_path do %>
+                  <i class='icon-user'></i>
+                  New to Flatty?
+                  <strong>Sign up</strong>
+                <% end %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
