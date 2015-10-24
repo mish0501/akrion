@@ -38,4 +38,13 @@ $( document ).ready(function() {
 	var articleheight = $(".article").outerHeight();
 	$("#comments").css("margin-top", articleheight);
 
+	var screenHeight = screen.height;
+	var screenWidth = screen.width;
+	if (screenHeight >= "1080" && screenWidth >= "1920"){
+		$(".sliderimage").css("max-height", "800px");
+	}else{
+		$(".sliderimage").css("max-height", "545px");
+	}
+	console.log(screenHeight + ', ' + screenWidth);
+
 });
